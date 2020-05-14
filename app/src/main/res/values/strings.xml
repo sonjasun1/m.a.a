@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MAA</string>
+    <string-array name="category_array">
+        <item>Uplifting</item>
+        <item>Momma</item>
+        <item>Sassy</item>
+        <item>Health</item>
+        <item>Work</item>
+        <item>Self Image</item>
+    </string-array>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="32pt"
+    android:paddingRight="32pt"
+    tools:context=".LoggedIn">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/logo"
+    />
+
+    <Button
+        android:id="@+id/giveMotivationButtons"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="toggleMotivation"
+        android:text="Give Motivation"
+        android:background="#ffffff"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/logoImageView"
+        />
+
+    <Spinner
+        android:id="@+id/categorySelection"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/giveMotivationButtons"
+        android:layout_marginBottom="10dp"
+        android:background="#ffffff"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/categorySelection"
+        android:timePickerMode="spinner"
+        android:background="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/logOut"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timePicker"
+        android:layout_centerHorizontal="true"
+        android:onClick="logOut"
+        android:text="Log Out"
+        android:background="#ffffff"
+        />
+
+</RelativeLayout>
